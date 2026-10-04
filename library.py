@@ -4,7 +4,7 @@ books = [
 ]
 
 def count_books():
-    return len(books)
+    return f"Книг: {len(books)}"
 
 def find_by_author(author):
     return [b for b in books if b["author"] == author]
