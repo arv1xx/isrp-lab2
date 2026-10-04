@@ -8,3 +8,7 @@ def count_books():
 
 def find_by_author(author):
     return [b for b in books if b["author"] == author]
+
+def delete_book(title):
+    global books
+    books = [b for b in books if b["title"] != title]
